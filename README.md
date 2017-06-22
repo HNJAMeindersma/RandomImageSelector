@@ -2,8 +2,10 @@
 The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
 
 Just use a normal HTML image tag or use the script as an image in your CSS stylesheets to include the Random Image Selector.
-- <img src="random_image.php" alt="My random image" title="My random image">
-- background-image: url('random_image.php');
+```
+<img src="random_image.php" alt="My random image" title="My random image">
+background-image: url('random_image.php');
+```
 
 **Script:** Random Image Selector<br />
 **Version:** v1.1.1<br />
