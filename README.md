@@ -27,7 +27,7 @@ background-image: url('random_image.php');
 - $img_cross_enable
 > 'yes' or 'no' if there should be a backup cross displayed if no images or fallback image is found.
 - $img_cross_color
-> HEX color code for the color of the cross.
+> HEX color code for the color of the backup cross.
 
 ### Dependancies
 - PHP 5.3.0
