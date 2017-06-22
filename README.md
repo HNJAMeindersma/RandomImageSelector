@@ -13,11 +13,13 @@ background-image: url('random_image.php');
 It is also possible to use the Random Image Selector via a GET request to specify a directory. This makes it possible to use the script for multiple random image directories. Use $_GET["dir"] in the following way:
 ```
 random_image.php?dir=some/other/directory/
+
+- Make sure to always end with a '/' for your GET request just like the default directory.
+- Spaces in directories should be converted to '%20' or '+'.
 ```
-Make sure to always end with a '/' for your $_GET["dir"] command.
 
 **Script:** Random Image Selector<br />
-**Version:** v1.2.0<br />
+**Version:** v1.2.1<br />
 **Author:** H.N.J.A. Meindersma <dev@hnjameindersma.nl><br />
 **Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.<br />
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2017 H.N.J.A. Meindersma
  * 
  * Script: Random Image Selector
- * Version: v1.2.0
+ * Version: v1.2.1
  * Author: H.N.J.A. Meindersma <dev@hnjameindersma.nl>
  * Description:	The Random Image Selector selects a random image from a 
  * 				directory and serve the script as an image trough 
@@ -50,7 +50,7 @@
 	$img_cross_enable		=	'yes';
 
 	// HEX color code for the color of the backup cross.
-	$img_cross_color		=	'#FFFFFF';
+	$img_cross_color		=	'#808080';
 
 /**
  *	Below here is the script. Do not modify below here, or do. I don't 
