@@ -59,7 +59,7 @@
 
 	// If a custom directory is called via $_GET["dir"] then use that 
 	// directory instead if it exists.
-	if($_GET["dir"] && $_GET["dir"] != NULL && file_exists($_GET["dir"])) {
+	if(isset($_GET["dir"]) && $_GET["dir"] != NULL && file_exists($_GET["dir"])) {
 		// Check if the $_GET["dir"] request ends with a '/'.
 		if(substr_compare($_GET["dir"], '/', strlen($_GET["dir"]) - strlen('/')) != true) {
 			$img_directory = $_GET["dir"];
