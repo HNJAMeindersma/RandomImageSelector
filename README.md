@@ -10,7 +10,6 @@ CSS
 background-image: url('random_image.php');
 ```
 
-
 **Script:** Random Image Selector<br />
 **Version:** v1.1.1<br />
 **Author:** H.N.J.A. Meindersma <dev@hnjameindersma.net><br />
@@ -32,16 +31,16 @@ background-image: url('random_image.php');
 
 ### Dependancies
 - PHP 5.3.0
-> PHP > echo() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > glob() [ 4.3.0, 5.0, 7.0 ]<br />
 > PHP > empty() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > file_exists() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > array_push() [ 4.0, 5.0, 7.0 ]<br />
-> PHP > array_rand() [ 4.0, 5.0, 7.0 ]<br />
-> PHP > class > finfo() [ 5.3.0 7.0 ]<br />
-> PHP > file() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > header() [ 4.0, 5.0, 7.0 ]<br />
-> PHP > file_get_contents() [ 4.3.0, 5.0, 7.0 ]<br />
 > PHP > echo() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > flush() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > unset() [ 4.0, 5.0, 7.0 ]<br />
+> PHP > exit() [ 4.0, 5.0, 7.0 ]<br />
+> PHP > array_rand() [ 4.0, 5.0, 7.0 ]<br />
+> PHP > class > finfo() [ 5.3.0, 7.0 ]<br />
+> PHP > file() [ 4.0, 5.0, 7.0 ]<br />
+> PHP > file_get_contents() [ 4.3.0, 5.0, 7.0 ]<br />

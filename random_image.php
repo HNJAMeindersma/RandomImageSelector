@@ -9,21 +9,20 @@
  * 				directory and serve the script as an image trough 
  * 				HTTP.
  * Dependancies: PHP 5.3.0
- * 	PHP > echo() [ 4.0, 5.0, 7.0 ]
  * 	PHP > glob() [ 4.3.0, 5.0, 7.0 ]
  * 	PHP > empty() [ 4.0, 5.0, 7.0 ]
  * 	PHP > file_exists() [ 4.0, 5.0, 7.0 ]
  * 	PHP > array_push() [ 4.0, 5.0, 7.0 ]
- * 	PHP > array_rand() [ 4.0, 5.0, 7.0 ]
- * 	PHP > class > finfo() [ 5.3.0 7.0 ]
- * 	PHP > file() [ 4.0, 5.0, 7.0 ]
  * 	PHP > header() [ 4.0, 5.0, 7.0 ]
- * 	PHP > file_get_contents() [ 4.3.0, 5.0, 7.0 ]
  * 	PHP > echo() [ 4.0, 5.0, 7.0 ]
  * 	PHP > flush() [ 4.0, 5.0, 7.0 ]
  * 	PHP > unset() [ 4.0, 5.0, 7.0 ]
+ * 	PHP > exit() [ 4.0, 5.0, 7.0 ]
+ * 	PHP > array_rand() [ 4.0, 5.0, 7.0 ]
+ * 	PHP > class > finfo() [ 5.3.0, 7.0 ]
+ * 	PHP > file() [ 4.0, 5.0, 7.0 ]
+ * 	PHP > file_get_contents() [ 4.3.0, 5.0, 7.0 ]
  */
-
 
 /**
  *	Configurations for the script below here.
