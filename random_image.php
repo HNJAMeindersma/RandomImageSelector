@@ -94,8 +94,8 @@
 	// Select a random file from array.
 	$img_random = $img_array[array_rand($img_array)];
 
-	// Select the image Mime-type and echo the header 'Content-Type' 
-	// with the Mime-type of the image.
+	// Select the image Mime-Type and echo the header 'Content-Type' 
+	// with the Mime-Type of the image.
 	$img_type = new finfo();
 	$img_type = $img_type->file($img_random, FILEINFO_MIME_TYPE);
 	header('Content-Type: ' . $img_type);

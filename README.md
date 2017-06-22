@@ -1,5 +1,6 @@
 # Random Image Selector
-The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
+##### The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
+The script scans the directory for images that fix the set extentions. These images are inserted into an array where a random one is chosen. The Mime-Type of the image is scanned and send via PHP as a HTTP header so the browser knows what to expect. Finally the contents of the chosen image file is loaded into the Random Image Selector.
 
 Just use a normal HTML image tag or use the script as an image in your CSS stylesheets to include the Random Image Selector.
 ```
