@@ -12,7 +12,7 @@ background-image: url('random_image.php');
 
 **Script:** Random Image Selector<br />
 **Version:** v1.1.1<br />
-**Author:** H.N.J.A. Meindersma <dev@hnjameindersma.net><br />
+**Author:** H.N.J.A. Meindersma <dev@hnjameindersma.nl><br />
 **Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.<br />
 
 ### Configuration
@@ -30,7 +30,7 @@ background-image: url('random_image.php');
 > HEX color code for the color of the backup cross.
 
 ### Dependancies
-- PHP 5.3.0
+- PHP >= 5.3.0
 > PHP > glob() [ 4.3.0, 5.0, 7.0 ]<br />
 > PHP > empty() [ 4.0, 5.0, 7.0 ]<br />
 > PHP > file_exists() [ 4.0, 5.0, 7.0 ]<br />

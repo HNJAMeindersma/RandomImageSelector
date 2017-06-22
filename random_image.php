@@ -4,11 +4,11 @@
  * 
  * Script: Random Image Selector
  * Version: v1.1.1
- * Author: H.N.J.A. Meindersma <dev@hnjameindersma.net>
+ * Author: H.N.J.A. Meindersma <dev@hnjameindersma.nl>
  * Description:	The Random Image Selector selects a random image from a 
  * 				directory and serve the script as an image trough 
  * 				HTTP.
- * Dependancies: PHP 5.3.0
+ * Dependancies: PHP >= 5.3.0
  * 	PHP > glob() [ 4.3.0, 5.0, 7.0 ]
  * 	PHP > empty() [ 4.0, 5.0, 7.0 ]
  * 	PHP > file_exists() [ 4.0, 5.0, 7.0 ]
