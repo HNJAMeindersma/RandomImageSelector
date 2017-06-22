@@ -3,15 +3,17 @@
  * Copyright (C) 2017 H.N.J.A. Meindersma
  * 
  * Script: Random Image Selector
- * Version: v1.1.1
+ * Version: v1.2.0
  * Author: H.N.J.A. Meindersma <dev@hnjameindersma.nl>
  * Description:	The Random Image Selector selects a random image from a 
  * 				directory and serve the script as an image trough 
  * 				HTTP.
  * Dependancies: PHP >= 5.3.0
+ * 	PHP > file_exists() [ 4.0, 5.0, 7.0 ]
+ * 	PHP > substr_compare() [ 5.0, 7.0 ]
+ * 	PHP > strlen() [ 4.0, 5.0, 7.0 ]
  * 	PHP > glob() [ 4.3.0, 5.0, 7.0 ]
  * 	PHP > empty() [ 4.0, 5.0, 7.0 ]
- * 	PHP > file_exists() [ 4.0, 5.0, 7.0 ]
  * 	PHP > array_push() [ 4.0, 5.0, 7.0 ]
  * 	PHP > header() [ 4.0, 5.0, 7.0 ]
  * 	PHP > echo() [ 4.0, 5.0, 7.0 ]
@@ -54,6 +56,15 @@
  *	Below here is the script. Do not modify below here, or do. I don't 
  *	care. No warranty <3
  */
+
+	// If a custom directory is called via $_GET["dir"] then use that 
+	// directory instead if it exists.
+	if($_GET["dir"] && $_GET["dir"] != NULL && file_exists($_GET["dir"])) {
+		// Check if the $_GET["dir"] request ends with a '/'.
+		if(substr_compare($_GET["dir"], '/', strlen($_GET["dir"]) - strlen('/')) != true) {
+			$img_directory = $_GET["dir"];
+		}
+	}
 
 	// Make an array from the files in the directory which fits the 
 	// type extention.
