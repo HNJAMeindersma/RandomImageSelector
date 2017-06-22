@@ -2,7 +2,7 @@
 The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
 
 **Script:** Random Image Selector<br />
-**Version:** v1.0.0<br />
+**Version:** v1.1.0<br />
 **Author:** H.N.J.A. Meindersma <dev@hnjameindersma.net><br />
 **Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
 
@@ -15,6 +15,10 @@ The Random Image Selector selects a random image from a directory and serve the 
 > File extentions which may be selected. Comma seperated, without spaces.
 - $img_fallback
 > Path to a fallback image if the directory is empty.
+- $img_cross_enable
+> 'yes' or 'no' if a cross should be displayed if no image is found at all.
+- $img_cross_color
+> HEX color code for the color of the cross.
 
 ### Dependancies
 - PHP 5.3.0
