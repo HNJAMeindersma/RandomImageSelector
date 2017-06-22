@@ -3,7 +3,7 @@
  * Copyright (C) 2017 H.N.J.A. Meindersma
  * 
  * Script: Random Image Selector
- * Version: v1.1.0
+ * Version: v1.1.1
  * Author: H.N.J.A. Meindersma <dev@hnjameindersma.net>
  * Description:	The Random Image Selector selects a random image from a 
  * 				directory and serve the script as an image trough 
@@ -44,11 +44,11 @@
 	// Path to a fallback image if the directory is empty.
 	$img_fallback			=	'fallback.jpg';
 
-	// 'yes' or 'no' if a cross should be displayed if no image is 
-	// found at all.
+	// 'yes' or 'no' if there should be a backup cross displayed if no 
+	// images or fallback image is found.
 	$img_cross_enable		=	'yes';
 
-	// HEX color code for the color of the cross.
+	// HEX color code for the color of the backup cross.
 	$img_cross_color		=	'#FFFFFF';
 
 /**

@@ -1,10 +1,14 @@
 # Random Image Selector
 The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
 
+Just use a normal HTML image tag or use the script as an image in your CSS stylesheets to include the Random Image Selector.
+- <img src="random_image.php" alt="My random image" title="My random image">
+- background-image: url('random_image.php');
+
 **Script:** Random Image Selector<br />
-**Version:** v1.1.0<br />
+**Version:** v1.1.1<br />
 **Author:** H.N.J.A. Meindersma <dev@hnjameindersma.net><br />
-**Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
+**Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.<br />
 
 ### Configuration
 - $img_enable
@@ -16,7 +20,7 @@ The Random Image Selector selects a random image from a directory and serve the 
 - $img_fallback
 > Path to a fallback image if the directory is empty.
 - $img_cross_enable
-> 'yes' or 'no' if a cross should be displayed if no image is found at all.
+> 'yes' or 'no' if there should be a backup cross displayed if no images or fallback image is found.
 - $img_cross_color
 > HEX color code for the color of the cross.
 
