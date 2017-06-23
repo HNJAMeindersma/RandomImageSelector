@@ -1,6 +1,6 @@
 # Random Image Selector
 ##### The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.
-The script scans the directory for images that fix the set extentions. These images are inserted into an array where a random one is chosen. The Mime-Type of the image is scanned and send via PHP as a HTTP header so the browser knows what to expect. Finally the contents of the chosen image file is loaded into the Random Image Selector.
+The script scans the directory for images that fix the set extentions. These images are inserted into an array where a random one is chosen. The Mime-Type of the image is retrieved and send via PHP as a HTTP header so the browser knows what to expect. Finally the contents of the chosen image file is loaded into the Random Image Selector.
 
 Just use a normal HTML image tag or use the script as an image in your CSS stylesheets to include the Random Image Selector.
 ```
@@ -18,8 +18,14 @@ random_image.php?dir=some/other/directory/
 > - Make sure to always end with a '/' for your GET request just like the default directory.
 > - Spaces in directories should be converted to '%20' or '+'.
 
+This is also possible for the image file types, use $_GET["types"]:
+```
+random_image.php?dir=some/other/directory/&types=jpg,png,gif
+```
+> - Make sure to use ',' to separate the image file types and not to use any spaces.
+
 **Script:** Random Image Selector<br />
-**Version:** v1.2.1<br />
+**Version:** v1.2.2<br />
 **Author:** H.N.J.A. Meindersma <dev@hnjameindersma.nl><br />
 **Description:** The Random Image Selector selects a random image from a directory and serve the script as an image trough HTTP.<br />
 

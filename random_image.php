@@ -3,7 +3,7 @@
  * Copyright (C) 2017 H.N.J.A. Meindersma
  * 
  * Script: Random Image Selector
- * Version: v1.2.1
+ * Version: v1.2.2
  * Author: H.N.J.A. Meindersma <dev@hnjameindersma.nl>
  * Description:	The Random Image Selector selects a random image from a 
  * 				directory and serve the script as an image trough 
@@ -57,13 +57,19 @@
  *	care. No warranty <3
  */
 
-	// If a custom directory is called via $_GET["dir"] then use that 
+	// If a custom directory is called via $_GET["dir"], then use that 
 	// directory instead if it exists.
 	if(isset($_GET["dir"]) && $_GET["dir"] != NULL && file_exists($_GET["dir"])) {
 		// Check if the $_GET["dir"] request ends with a '/'.
 		if(substr_compare($_GET["dir"], '/', strlen($_GET["dir"]) - strlen('/')) != true) {
 			$img_directory = $_GET["dir"];
 		}
+	}
+
+	// If custom file types are called via $_GET["types"], then use 
+	// those file types instead.
+	if(isset($_GET["types"]) && $_GET["types"] != NULL) {
+		$img_types = $_GET["types"];
 	}
 
 	// Make an array from the files in the directory which fits the 
