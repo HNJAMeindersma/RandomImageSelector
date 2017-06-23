@@ -66,8 +66,8 @@
 		}
 	}
 
-	// If custom file types are called via $_GET["types"], then use 
-	// those file types instead.
+	// If custom file extentions are called via $_GET["types"], then use 
+	// those file extentions instead.
 	if(isset($_GET["types"]) && $_GET["types"] != NULL) {
 		$img_types = $_GET["types"];
 	}
