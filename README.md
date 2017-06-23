@@ -18,7 +18,7 @@ random_image.php?dir=some/other/directory/
 > - Make sure to always end with a '/' for your GET request just like the default directory.
 > - Spaces in directories should be converted to '%20' or '+'.
 
-This is also possible for the image file types, use $_GET["types"]:
+This GET request is also possible for the image file extentions, use $_GET["types"]:
 ```
 random_image.php?dir=some/other/directory/&types=jpg,png,gif
 ```
