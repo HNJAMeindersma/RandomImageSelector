@@ -22,7 +22,7 @@ This is also possible for the image file types, use $_GET["types"]:
 ```
 random_image.php?dir=some/other/directory/&types=jpg,png,gif
 ```
-> - Make sure to use ',' to separate the image file types and not to use any spaces.
+> - Make sure to use ',' to separate the image file extentions and not to use any spaces.
 
 **Script:** Random Image Selector<br />
 **Version:** v1.2.2<br />
